@@ -1,0 +1,1350 @@
+<div id="sise-topmentor-home">
+
+<style>
+#sise-topmentor-home{
+  --pink:#FF0050;
+  --pink-light:#FF4B80;
+  --pink-soft:#FFF0F5;
+  --dark:#171416;
+  --dark-2:#231F20;
+  --dark-3:#30282C;
+  --wine:#5A1830;
+  --wine-dark:#310917;
+  --gray:#646064;
+  --soft-gray:#F5F2F3;
+  --border:#E9E1E4;
+  --white:#F6F1F3;
+
+  width:100%;
+  margin:0;
+  padding:0 0 50px;
+  color:var(--dark-2);
+  background:#EFE7EB;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.5;
+}
+
+#sise-topmentor-home *{
+  box-sizing:border-box;
+}
+
+#sise-topmentor-home a,
+#sise-topmentor-home button{
+  transition:all .25s ease;
+}
+
+#sise-topmentor-home .sise-container{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding-left:24px;
+  padding-right:24px;
+}
+
+/* PORTADA */
+
+#sise-topmentor-home .sise-hero{
+  position:relative;
+  overflow:hidden;
+  padding:68px 0 110px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 91% 18%,rgba(255,0,80,.22) 0,rgba(255,0,80,0) 34%),
+    radial-gradient(circle at 8% 100%,rgba(120,24,58,.42) 0,rgba(120,24,58,0) 38%),
+    linear-gradient(125deg,#151314 0%,#241B1F 52%,#4A1026 100%);
+}
+
+#sise-topmentor-home .sise-hero:before{
+  content:"";
+  position:absolute;
+  width:430px;
+  height:430px;
+  right:-135px;
+  top:-155px;
+  border:2px solid rgba(255,255,255,.09);
+  border-radius:50%;
+}
+
+#sise-topmentor-home .sise-hero:after{
+  content:"";
+  position:absolute;
+  width:235px;
+  height:235px;
+  right:40px;
+  top:-40px;
+  border:1px solid rgba(255,0,80,.2);
+  border-radius:50%;
+}
+
+#sise-topmentor-home .sise-dot-pattern{
+  position:absolute;
+  left:24px;
+  top:24px;
+  width:105px;
+  height:75px;
+  opacity:.45;
+  background-image:radial-gradient(circle,#FF0050 1.6px,transparent 1.7px);
+  background-size:16px 16px;
+}
+
+#sise-topmentor-home .sise-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:900px;
+}
+
+#sise-topmentor-home .sise-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 20px;
+  padding:9px 15px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  color:#FFFFFF;
+  font-size:19px;
+  font-weight:700;
+  letter-spacing:1.1px;
+  text-transform:uppercase;
+}
+
+#sise-topmentor-home .sise-eyebrow-dot{
+  display:inline-block;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 0 5px rgba(255,0,80,.14);
+}
+
+#sise-topmentor-home .sise-hero h1{
+  max-width:940px;
+  margin:0 0 20px;
+  color:#FFFFFF;
+  font-size:clamp(42px,6vw,72px);
+  line-height:1.02;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+#sise-topmentor-home .sise-highlight{
+  color:var(--pink);
+}
+
+#sise-topmentor-home .sise-hero-description{
+  max-width:790px;
+  margin:0 0 32px;
+  color:rgba(255,255,255,.86);
+  font-size:20px;
+  line-height:1.6;
+}
+
+#sise-topmentor-home .sise-btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:14px 25px;
+  border-radius:10px;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#FF0050,#E00046);
+  box-shadow:0 14px 28px rgba(255,0,80,.24);
+  text-decoration:none;
+  font-size:18px;
+  font-weight:700;
+}
+
+#sise-topmentor-home .sise-btn-primary:hover{
+  color:#FFFFFF;
+  transform:translateY(-2px);
+  box-shadow:0 18px 34px rgba(255,0,80,.32);
+}
+
+/* DATOS DEL CURSO */
+
+#sise-topmentor-home .sise-stats-wrap{
+  position:relative;
+  z-index:4;
+  max-width:1180px;
+  margin:-54px auto 42px;
+  padding:0 24px;
+}
+
+#sise-topmentor-home .sise-stats{
+  width:100%;
+  overflow:hidden;
+  border-collapse:separate;
+  border-spacing:0;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  background:linear-gradient(135deg,#211D1F 0%,#2A2226 100%);
+  box-shadow:0 18px 45px rgba(35,31,32,.18);
+}
+
+#sise-topmentor-home .sise-stats td{
+  width:20%;
+  padding:26px 18px;
+  color:#FFFFFF;
+  text-align:center;
+  vertical-align:top;
+  border-right:1px solid rgba(255,255,255,.1);
+}
+
+#sise-topmentor-home .sise-stats td:last-child{
+  border-right:none;
+}
+
+#sise-topmentor-home .sise-stat-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:46px;
+  height:46px;
+  margin:0 auto 13px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#FF0050,#FF386F);
+  box-shadow:0 0 0 6px rgba(255,0,80,.1);
+  font-size:18px;
+  font-weight:900;
+}
+
+#sise-topmentor-home .sise-stat-value{
+  margin:0 0 4px;
+  color:#FFFFFF;
+  font-size:21px;
+  font-weight:800;
+}
+
+#sise-topmentor-home .sise-stat-label{
+  margin:0;
+  color:rgba(255,255,255,.67);
+  font-size:19px;
+  line-height:1.35;
+}
+
+/* INSTRUCCIÓN */
+
+#sise-topmentor-home .sise-intro{
+  margin-bottom:30px;
+  padding:22px 25px;
+  border-left:6px solid var(--pink);
+  border-radius:0 14px 14px 0;
+  background:linear-gradient(90deg,#FFF0F5 0%,#FFF8FA 100%);
+}
+
+#sise-topmentor-home .sise-intro p{
+  margin:0;
+  color:#433B3E;
+  font-size:19px;
+  line-height:1.55;
+}
+
+/* NAVEGACIÓN */
+
+#sise-topmentor-home .sise-navigation{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-bottom:18px;
+}
+
+#sise-topmentor-home .sise-nav-button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:58px;
+  margin:0;
+  padding:14px 15px;
+  border:1px solid #E5DCE0;
+  border-radius:12px;
+  outline:none;
+  color:#3C3538;
+  background:#F8F3F5;
+  box-shadow:0 7px 18px rgba(35,31,32,.06);
+  cursor:pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:19px;
+  font-weight:800;
+  text-align:center;
+}
+
+#sise-topmentor-home .sise-nav-button:hover{
+  color:#FFFFFF;
+  border-color:var(--pink);
+  background:var(--pink);
+  transform:translateY(-2px);
+  box-shadow:0 12px 24px rgba(255,0,80,.18);
+}
+
+#sise-topmentor-home .sise-nav-button.active{
+  color:#FFFFFF;
+  border-color:var(--pink);
+  background:linear-gradient(135deg,#FF0050,#E50048);
+  box-shadow:0 10px 24px rgba(255,0,80,.25);
+}
+
+#sise-topmentor-home .sise-nav-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:28px;
+  height:28px;
+  flex:0 0 28px;
+  border:1px solid currentColor;
+  border-radius:50%;
+  font-size:14px;
+  font-weight:900;
+}
+
+/* CAJA DINÁMICA */
+
+#sise-topmentor-home .sise-dynamic-box{
+  overflow:hidden;
+  min-height:530px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#F8F4F6;
+  box-shadow:0 16px 38px rgba(35,31,32,.09);
+}
+
+#sise-topmentor-home .sise-dynamic-header{
+  position:relative;
+  overflow:hidden;
+  padding:33px 34px 30px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 95% 0,rgba(255,0,80,.22),transparent 36%),
+    linear-gradient(130deg,#211D1F 0%,#421123 100%);
+}
+
+#sise-topmentor-home .sise-dynamic-header:after{
+  content:"";
+  position:absolute;
+  width:165px;
+  height:165px;
+  right:-42px;
+  top:-72px;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:50%;
+}
+
+#sise-topmentor-home .sise-dynamic-kicker{
+  position:relative;
+  z-index:1;
+  display:block;
+  margin:0 0 7px;
+  color:#FF8AAF;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+}
+
+#sise-topmentor-home .sise-dynamic-title{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:#FFFFFF;
+  font-size:32px;
+  line-height:1.15;
+  font-weight:800;
+}
+
+#sise-topmentor-home .sise-dynamic-body{
+  padding:34px;
+  animation:siseFadeIn .35s ease;
+}
+
+@keyframes siseFadeIn{
+  from{
+    opacity:0;
+    transform:translateY(8px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+#sise-topmentor-home .sise-dynamic-body p{
+  margin:0 0 22px;
+  color:#5B5457;
+  font-size:19px;
+  line-height:1.65;
+}
+
+/* SOBRE EL CURSO */
+
+#sise-topmentor-home .sise-section-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:30px 0 15px;
+  color:#231F20;
+  font-size:23px;
+  line-height:1.25;
+}
+
+#sise-topmentor-home .sise-section-title:first-child{
+  margin-top:0;
+}
+
+#sise-topmentor-home .sise-title-number{
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:var(--pink);
+  font-size:14px;
+  box-shadow:0 0 0 6px rgba(255,0,80,.08);
+}
+
+#sise-topmentor-home .sise-audience-card{
+  padding:20px 22px;
+  border:1px solid #F1DCE4;
+  border-radius:13px;
+  background:var(--pink-soft);
+}
+
+#sise-topmentor-home .sise-audience-card p{
+  margin:0;
+  color:#3C3336;
+}
+
+#sise-topmentor-home .sise-goal-card{
+  position:relative;
+  overflow:hidden;
+  padding:24px 25px;
+  border:1px solid #E6DDE0;
+  border-radius:14px;
+  background:#FAF8F9;
+}
+
+#sise-topmentor-home .sise-goal-card:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:6px;
+  background:linear-gradient(#FF0050,#8D1E45);
+}
+
+#sise-topmentor-home .sise-goal-card p{
+  margin:0;
+  color:#40383B;
+}
+
+#sise-topmentor-home .sise-competence{
+  padding:25px;
+  border-radius:15px;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#231F20,#3B1725);
+}
+
+#sise-topmentor-home .sise-competence strong{
+  display:block;
+  margin-bottom:10px;
+  color:#FF5D8E;
+  font-size:20px;
+}
+
+#sise-topmentor-home .sise-competence p{
+  margin:0;
+  color:rgba(255,255,255,.82);
+}
+
+/* MÓDULOS */
+
+#sise-topmentor-home .sise-modules-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+#sise-topmentor-home .sise-module-card{
+  position:relative;
+  overflow:hidden;
+  min-height:390px;
+  padding:29px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:17px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 100% 0,rgba(255,0,80,.2),transparent 40%),
+    linear-gradient(145deg,#1D1A1C 0%,#2B2528 100%);
+  box-shadow:0 14px 28px rgba(35,31,32,.14);
+}
+
+#sise-topmentor-home .sise-module-card:after{
+  content:"";
+  position:absolute;
+  width:150px;
+  height:150px;
+  right:-65px;
+  bottom:-65px;
+  border:1px solid rgba(255,0,80,.28);
+  border-radius:50%;
+}
+
+#sise-topmentor-home .sise-module-top{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:24px;
+}
+
+#sise-topmentor-home .sise-module-number{
+  display:flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#FF0050,#FF477C);
+  font-size:23px;
+  font-weight:900;
+  box-shadow:0 0 0 7px rgba(255,0,80,.11);
+}
+
+#sise-topmentor-home .sise-module-label{
+  color:#FF6D9B;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+}
+
+#sise-topmentor-home .sise-module-card h3{
+  min-height:94px;
+  margin:0 0 14px;
+  color:#FFFFFF;
+  font-size:24px;
+  line-height:1.3;
+}
+
+#sise-topmentor-home .sise-module-card p{
+  min-height:82px;
+  margin:0 0 27px;
+  color:rgba(255,255,255,.7);
+  font-size:18px;
+  line-height:1.55;
+}
+
+#sise-topmentor-home .sise-module-btn{
+  position:relative;
+  z-index:2;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:13px 20px;
+  border-radius:9px;
+  color:#FFFFFF;
+  background:var(--pink);
+  text-decoration:none;
+  font-size:19px;
+  font-weight:700;
+}
+
+#sise-topmentor-home .sise-module-btn:hover{
+  color:#FFFFFF;
+  background:#D90044;
+  transform:translateY(-2px);
+}
+
+/* EVALUACIÓN */
+
+#sise-topmentor-home .sise-evaluation-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+#sise-topmentor-home .sise-evaluation-card{
+  min-height:260px;
+  padding:26px 23px;
+  border:1px solid #E9E1E4;
+  border-top:5px solid var(--pink);
+  border-radius:16px;
+  background:#FAF6F8;
+  box-shadow:0 10px 25px rgba(35,31,32,.07);
+}
+
+#sise-topmentor-home .sise-evaluation-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:50px;
+  height:50px;
+  margin-bottom:20px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#FF0050,#FF467B);
+  font-size:18px;
+  font-weight:900;
+}
+
+#sise-topmentor-home .sise-evaluation-card h3{
+  margin:0 0 12px;
+  color:#231F20;
+  font-size:20px;
+  line-height:1.25;
+}
+
+#sise-topmentor-home .sise-evaluation-card p{
+  margin:0;
+  color:#665E61;
+  font-size:19px;
+  line-height:1.55;
+}
+
+#sise-topmentor-home .sise-pass-card{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  margin-top:30px;
+  padding:24px 26px;
+  border-radius:15px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 90% 20%,rgba(255,0,80,.25),transparent 35%),
+    linear-gradient(125deg,#211D1F,#441124);
+}
+
+#sise-topmentor-home .sise-pass-number{
+  display:flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:var(--pink);
+  font-size:28px;
+  font-weight:900;
+  box-shadow:0 0 0 8px rgba(255,0,80,.13);
+}
+
+#sise-topmentor-home .sise-pass-card p{
+  margin:0;
+  color:rgba(255,255,255,.86);
+}
+
+#sise-topmentor-home .sise-pass-card strong{
+  color:#FFFFFF;
+}
+
+/* DESCARGABLES */
+
+#sise-topmentor-home .sise-download-content{
+  position:relative;
+  overflow:hidden;
+  min-height:330px;
+  padding:50px 30px;
+  border-radius:16px;
+  text-align:center;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 15% 90%,rgba(255,0,80,.18),transparent 34%),
+    radial-gradient(circle at 90% 10%,rgba(255,0,80,.24),transparent 33%),
+    linear-gradient(135deg,#171416 0%,#33101E 100%);
+}
+
+#sise-topmentor-home .sise-download-content:before{
+  content:"";
+  position:absolute;
+  width:230px;
+  height:230px;
+  right:-70px;
+  top:-100px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:50%;
+}
+
+#sise-topmentor-home .sise-download-icon{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:72px;
+  height:72px;
+  margin:0 auto 22px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:var(--pink);
+  font-size:30px;
+  font-weight:900;
+  box-shadow:0 0 0 9px rgba(255,0,80,.12);
+}
+
+#sise-topmentor-home .sise-download-content h3{
+  position:relative;
+  margin:0 0 12px;
+  color:#FFFFFF;
+  font-size:30px;
+}
+
+#sise-topmentor-home .sise-download-content p{
+  position:relative;
+  max-width:680px;
+  margin:0 auto 28px;
+  color:rgba(255,255,255,.72);
+  font-size:19px;
+}
+
+#sise-topmentor-home .sise-download-actions{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+#sise-topmentor-home .sise-download-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:190px;
+  padding:14px 22px;
+  border-radius:9px;
+  color:#231F20;
+  background:#F1E5EA;
+  text-decoration:none;
+  font-size:19px;
+  font-weight:700;
+}
+
+#sise-topmentor-home .sise-download-btn:hover{
+  color:#FFFFFF;
+  background:var(--pink);
+  transform:translateY(-2px);
+}
+
+#sise-topmentor-home .sise-download-btn-alt{
+  color:#FFFFFF;
+  border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.08);
+}
+
+#sise-topmentor-home .sise-download-btn-alt:hover{
+  color:#FFFFFF;
+  border-color:var(--pink);
+  background:var(--pink);
+}
+
+#sise-topmentor-home .sise-template{
+  display:none !important;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:900px){
+
+  #sise-topmentor-home .sise-stats,
+  #sise-topmentor-home .sise-stats tbody,
+  #sise-topmentor-home .sise-stats tr{
+    display:block;
+  }
+
+  #sise-topmentor-home .sise-stats tr{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #sise-topmentor-home .sise-stats td{
+    display:block;
+    width:100%;
+    border-right:1px solid rgba(255,255,255,.1);
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+
+  #sise-topmentor-home .sise-stats td:last-child{
+    grid-column:1 / -1;
+  }
+
+  #sise-topmentor-home .sise-navigation{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #sise-topmentor-home .sise-modules-grid{
+    grid-template-columns:1fr;
+  }
+
+  #sise-topmentor-home .sise-module-card h3{
+    min-height:auto;
+  }
+
+  #sise-topmentor-home .sise-evaluation-grid{
+    grid-template-columns:1fr;
+  }
+
+  #sise-topmentor-home .sise-evaluation-card{
+    min-height:auto;
+  }
+}
+
+@media screen and (max-width:600px){
+
+  #sise-topmentor-home .sise-container{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  #sise-topmentor-home .sise-hero{
+    padding:48px 0 82px;
+  }
+
+  #sise-topmentor-home .sise-hero h1{
+    font-size:39px;
+    letter-spacing:-1px;
+  }
+
+  #sise-topmentor-home .sise-hero-description{
+    font-size:19px;
+  }
+
+  #sise-topmentor-home .sise-btn-primary{
+    width:100%;
+  }
+
+  #sise-topmentor-home .sise-stats-wrap{
+    margin-top:-44px;
+    padding:0 16px;
+  }
+
+  #sise-topmentor-home .sise-stats tr{
+    grid-template-columns:1fr;
+  }
+
+  #sise-topmentor-home .sise-stats td:last-child{
+    grid-column:auto;
+  }
+
+  #sise-topmentor-home .sise-navigation{
+    grid-template-columns:1fr;
+  }
+
+  #sise-topmentor-home .sise-nav-button{
+    justify-content:flex-start;
+  }
+
+  #sise-topmentor-home .sise-dynamic-header{
+    padding:25px 21px;
+  }
+
+  #sise-topmentor-home .sise-dynamic-title{
+    font-size:27px;
+  }
+
+  #sise-topmentor-home .sise-dynamic-body{
+    padding:25px 21px;
+  }
+
+  #sise-topmentor-home .sise-module-card{
+    min-height:auto;
+  }
+
+  #sise-topmentor-home .sise-pass-card{
+    display:block;
+    text-align:center;
+  }
+
+  #sise-topmentor-home .sise-pass-number{
+    margin:0 auto 20px;
+  }
+
+  #sise-topmentor-home .sise-download-content{
+    padding:42px 20px;
+  }
+}
+</style>
+
+<!-- PORTADA -->
+
+<div class="sise-hero">
+
+  <div class="sise-dot-pattern"></div>
+
+  <div class="sise-container">
+
+    <div class="sise-hero-content">
+
+      <div class="sise-eyebrow">
+        <span class="sise-eyebrow-dot"></span>
+        Capacitación docente
+      </div>
+
+      <h1>
+        <span class="sise-highlight">TOP MENTOR 2.0</span><br>
+        Programa de mentoría docente
+      </h1>
+
+      <p class="sise-hero-description">
+        Actualízate y perfecciona tu rol como mentor especializado
+        en emprendimiento e innovación. Desarrolla mejores prácticas
+        para guiar con éxito proyectos y startups de tus estudiantes.
+      </p>
+
+      <a
+        class="sise-btn-primary"
+        href="https://aulad.educad.pe/courses/537/modules">
+        Iniciar recorrido&nbsp; →
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- DATOS DEL PROGRAMA -->
+
+<div class="sise-stats-wrap">
+
+  <table class="sise-stats">
+    <tbody>
+      <tr>
+
+        <td>
+          <div class="sise-stat-icon">◫</div>
+          <div class="sise-stat-value">06 Sesiones</div>
+          <p class="sise-stat-label">Ruta formativa especializada</p>
+        </td>
+
+        <td>
+          <div class="sise-stat-icon">◷</div>
+          <div class="sise-stat-value">12 horas totales</div>
+          <p class="sise-stat-label">De 3:00 p. m. a 5:00 p. m.</p>
+        </td>
+
+        <td>
+          <div class="sise-stat-icon">↔</div>
+          <div class="sise-stat-value">Híbrido</div>
+          <p class="sise-stat-label">Sesiones virtuales y presenciales</p>
+        </td>
+
+        <td>
+          <div class="sise-stat-icon">▣</div>
+          <div class="sise-stat-value">Fechas</div>
+          <p class="sise-stat-label">Agosto 17, 19, 21, 24, 26 y 28</p>
+        </td>
+
+        <td>
+          <div class="sise-stat-icon">⌘</div>
+          <div class="sise-stat-value">Dirigido a</div>
+          <p class="sise-stat-label">Docentes SISE</p>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- NAVEGACIÓN Y CAJA DINÁMICA -->
+
+<div class="sise-container" id="sise-contenido-dinamico">
+
+  <div class="sise-intro">
+    <p>
+      <strong>Instrucción:</strong>
+      selecciona una opción para revisar la información del programa.
+      El contenido se mostrará en una única caja dinámica.
+    </p>
+  </div>
+
+  <div
+    class="sise-navigation"
+    role="tablist"
+    aria-label="Secciones del curso">
+
+    <button
+      type="button"
+      class="sise-nav-button active"
+      data-section="sobre-curso"
+      role="tab"
+      aria-selected="true">
+      <span class="sise-nav-icon">i</span>
+      Sobre el programa
+    </button>
+
+    <button
+      type="button"
+      class="sise-nav-button"
+      data-section="modulos"
+      role="tab"
+      aria-selected="false">
+      <span class="sise-nav-icon">☰</span>
+      Cronograma
+    </button>
+
+    <button
+      type="button"
+      class="sise-nav-button"
+      data-section="evaluacion"
+      role="tab"
+      aria-selected="false">
+      <span class="sise-nav-icon">◎</span>
+      Modalidad
+    </button>
+
+    <button
+      type="button"
+      class="sise-nav-button"
+      data-section="descargables"
+      role="tab"
+      aria-selected="false">
+      <span class="sise-nav-icon">@</span>
+      Contacto
+    </button>
+
+  </div>
+
+  <!-- ÚNICA CAJA VISIBLE -->
+
+  <section
+    class="sise-dynamic-box"
+    aria-live="polite"
+    aria-atomic="true">
+
+    <div class="sise-dynamic-header">
+
+      <span
+        class="sise-dynamic-kicker"
+        id="sise-dynamic-kicker">
+        Información general
+      </span>
+
+      <h2
+        class="sise-dynamic-title"
+        id="sise-dynamic-title">
+        Conoce el propósito del curso
+      </h2>
+
+    </div>
+
+    <div
+      class="sise-dynamic-body"
+      id="sise-dynamic-body">
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">01</span>
+        Presentación
+      </h3>
+
+      <p>
+        <strong>Top Mentor 2.0</strong> es una capacitación dirigida a docentes
+        del Instituto SISE que busca actualizar y perfeccionar su rol como
+        mentores especializados en emprendimiento e innovación.
+      </p>
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">02</span>
+        Propósito
+      </h3>
+
+      <div class="sise-audience-card">
+        <p>
+          Desarrollar mejores prácticas para guiar con éxito proyectos y
+          startups de los estudiantes, fortaleciendo la comunicación,
+          el acompañamiento, el liderazgo y el seguimiento de la mentoría.
+        </p>
+      </div>
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">03</span>
+        Capacitadora
+      </h3>
+
+      <div class="sise-goal-card">
+        <p>
+          <strong>Carla Morante</strong><br>
+          Jefe de Empleabilidad y Emprendimiento.
+        </p>
+      </div>
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">04</span>
+        Público objetivo
+      </h3>
+
+      <div class="sise-competence">
+        <strong>Docentes del Instituto SISE</strong>
+        <p>
+          Participantes interesados en fortalecer su perfil como docentes
+          mentores y acompañar de manera efectiva los proyectos de sus estudiantes.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PLANTILLA: SOBRE EL PROGRAMA -->
+
+  <div
+    id="sise-template-sobre-curso"
+    class="sise-template"
+    data-kicker="Información general"
+    data-title="Conoce Top Mentor 2.0">
+
+    <h3 class="sise-section-title">
+      <span class="sise-title-number">01</span>
+      Presentación
+    </h3>
+
+    <p>
+      <strong>Top Mentor 2.0</strong> es una capacitación dirigida a docentes
+      del Instituto SISE que busca actualizar y perfeccionar su rol como
+      mentores especializados en emprendimiento e innovación.
+    </p>
+
+    <h3 class="sise-section-title">
+      <span class="sise-title-number">02</span>
+      Propósito
+    </h3>
+
+    <div class="sise-audience-card">
+      <p>
+        Desarrollar mejores prácticas para guiar con éxito proyectos y
+        startups de los estudiantes, fortaleciendo la comunicación,
+        el acompañamiento, el liderazgo y el seguimiento de la mentoría.
+      </p>
+    </div>
+
+    <h3 class="sise-section-title">
+      <span class="sise-title-number">03</span>
+      Capacitadora
+    </h3>
+
+    <div class="sise-goal-card">
+      <p>
+        <strong>Carla Morante</strong><br>
+        Jefe de Empleabilidad y Emprendimiento.
+      </p>
+    </div>
+
+    <h3 class="sise-section-title">
+      <span class="sise-title-number">04</span>
+      Público objetivo
+    </h3>
+
+    <div class="sise-competence">
+      <strong>Docentes del Instituto SISE</strong>
+      <p>
+        Participantes interesados en fortalecer su perfil como docentes
+        mentores y acompañar de manera efectiva los proyectos de sus estudiantes.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- PLANTILLA: CRONOGRAMA -->
+
+  <div
+    id="sise-template-modulos"
+    class="sise-template"
+    data-kicker="Cronograma de sesiones"
+    data-title="Ruta formativa de agosto">
+
+    <p>
+      Las seis sesiones se desarrollarán de <strong>3:00 p. m. a 5:00 p. m.</strong>
+      en modalidad híbrida.
+    </p>
+
+    <div class="sise-evaluation-grid">
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">17</div>
+        <h3>Sesión 1 · Lunes 17</h3>
+        <p><strong>Virtual</strong><br>Introducción al Programa Top Mentor y perfil del docente mentor.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">19</div>
+        <h3>Sesión 2 · Miércoles 19</h3>
+        <p><strong>Virtual</strong><br>Comunicación efectiva y acompañamiento al estudiante.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">21</div>
+        <h3>Sesión 3 · Viernes 21</h3>
+        <p><strong>Presencial · Sede Santa Beatriz</strong><br>Taller de estrategias de mentoría e intervención docente.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">24</div>
+        <h3>Sesión 4 · Lunes 24</h3>
+        <p><strong>Virtual</strong><br>Liderazgo y gestión de la diversidad en la mentoría.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">26</div>
+        <h3>Sesión 5 · Miércoles 26</h3>
+        <p><strong>Virtual</strong><br>Herramientas de seguimiento y plan de mentoría.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">28</div>
+        <h3>Sesión 6 · Viernes 28</h3>
+        <p><strong>Presencial · Sede Santa Beatriz</strong><br>Encuentro de Speed Mentoring: compartiendo experiencias y buenas prácticas.</p>
+      </article>
+
+    </div>
+
+  </div>
+
+  <!-- PLANTILLA: MODALIDAD -->
+
+  <div
+    id="sise-template-evaluacion"
+    class="sise-template"
+    data-kicker="Organización del programa"
+    data-title="Modalidad y participación">
+
+    <p>
+      La capacitación combina encuentros virtuales con sesiones presenciales
+      para favorecer la aplicación práctica, el intercambio de experiencias
+      y el acompañamiento entre docentes.
+    </p>
+
+    <div class="sise-evaluation-grid">
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">V</div>
+        <h3>Sesiones virtuales</h3>
+        <p>Se desarrollarán los días 17, 19, 24 y 26 de agosto, de 3:00 p. m. a 5:00 p. m.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">P</div>
+        <h3>Sesiones presenciales</h3>
+        <p>Se realizarán los días 21 y 28 de agosto en la <strong>Sede Santa Beatriz</strong>.</p>
+      </article>
+
+      <article class="sise-evaluation-card">
+        <div class="sise-evaluation-icon">12</div>
+        <h3>Duración total</h3>
+        <p>El programa comprende seis sesiones y un total de <strong>12 horas de formación</strong>.</p>
+      </article>
+
+    </div>
+
+    <div class="sise-pass-card">
+      <div class="sise-pass-number">6</div>
+      <p>Participa en las seis sesiones para completar la ruta de <strong>Top Mentor 2.0</strong>.</p>
+    </div>
+
+  </div>
+
+  <!-- PLANTILLA: CONTACTO -->
+
+  <div
+    id="sise-template-descargables"
+    class="sise-template"
+    data-kicker="Información de contacto"
+    data-title="Consultas e inscripción">
+
+    <div class="sise-download-content">
+
+      <div class="sise-download-icon">@</div>
+
+      <h3>Área de Empleabilidad y Emprendimiento</h3>
+
+      <p>
+        Para consultas sobre el programa Top Mentor 2.0,
+        comunícate con el equipo organizador.
+      </p>
+
+      <div class="sise-download-actions">
+
+        <a class="sise-download-btn" href="mailto:ltorresna@sise.edu.pe">
+          ltorresna@sise.edu.pe
+        </a>
+
+        <a class="sise-download-btn sise-download-btn-alt" href="tel:+51934106033">
+          +51 934 106 033
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+(function(){
+
+  var component = document.getElementById("sise-topmentor-home");
+
+  if(!component){
+    return;
+  }
+
+  var buttons = component.querySelectorAll(".sise-nav-button");
+  var kicker = component.querySelector("#sise-dynamic-kicker");
+  var title = component.querySelector("#sise-dynamic-title");
+  var body = component.querySelector("#sise-dynamic-body");
+
+  function changeSection(section, selectedButton){
+
+    var template = component.querySelector(
+      "#sise-template-" + section
+    );
+
+    if(!template){
+      return;
+    }
+
+    kicker.textContent = template.getAttribute("data-kicker");
+    title.textContent = template.getAttribute("data-title");
+
+    body.style.animation = "none";
+    body.offsetHeight;
+    body.innerHTML = template.innerHTML;
+    body.style.animation = "siseFadeIn .35s ease";
+
+    buttons.forEach(function(button){
+
+      var isActive = button === selectedButton;
+
+      button.classList.toggle("active", isActive);
+
+      button.setAttribute(
+        "aria-selected",
+        isActive ? "true" : "false"
+      );
+
+    });
+
+  }
+
+  buttons.forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+      changeSection(
+        button.getAttribute("data-section"),
+        button
+      );
+
+    });
+
+  });
+
+})();
+</script>
+
+</div>
